@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="shortcut icon" href="../../images/banner.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Test de Phishing</title>
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="../../index.html"><img src="../../images/text.png" alt=""></a>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="../../index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../../index.html#acercade" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../../index.html#celulares" class="nav__links">Celulares</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../../index.html#merchandising" class="nav__links">Merchandising</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../../sitios/index.html#scripts" class="nav__links">Scripts</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../index.html" class="nav__links">Tests</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#recursos" class="nav__links">Recursos</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#contacto" class="nav__links">Contacto</a>
+                </li>
+
+                <img src="../../images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="../../images/menu.svg" class="nav__img">
+            </div>
+            
+        </nav>
+        <section class="hero__container container">
+            <img class="logo2" src="../../images/banner.png" alt="">
+            <img class="logo3" src="../../images/text.png" alt="">
+        </section>
+        <div class="container2">
+
+            <h1>¿Sos vulnerable a un ataque phishing?</h1>
+            <!-- Sección 1 -->
+            <section data-section="p0" id="p0">
+                <h3>1. ¿Cuál es uno de los métodos más comunes utilizados en ataques de phishing?</h3>
+                <label>
+                    <input type="radio" value="1" name="p0" data-index="0" onclick="respuesta(0, this)"> Uso de la fuerza bruta en contraseñas
+                </label>
+                <label>
+                    <input data-index="0" type="radio" value="2" name="p0" onclick="respuesta(0, this)"> Ingeniería social mediante la suplantación de identidad
+                </label>
+                <label>
+                    <input data-index="0" type="radio" value="3" name="p0" onclick="respuesta(0, this)"> Ataques de denegación de servicio (DDoS)
+                </label>
+            </section>
+            
+            <!-- Sección 2 -->
+            <section data-section="p1" class="hidden" id="p1">
+                <h3>2. En el contexto del phishing, ¿qué se entiende por "Spear Phishing"?</h3>
+                <label>
+                    <input type="radio" value="1" name="p1" onclick="respuesta(1, this)"> Ataques dirigidos a un amplio público en general
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p1" onclick="respuesta(1, this)"> Ataques altamente personalizados dirigidos a individuos específicos
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p1" onclick="respuesta(1, this)"> Ataques realizados exclusivamente en redes sociales
+                </label>
+            </section>
+            
+            <!-- Sección 3 -->
+            <section data-section="p2" class="hidden" id="p2">
+                <h3>3. ¿Qué tipo de información los atacantes buscan comúnmente en un ataque de phishing?</h3>
+                <label>
+                    <input type="radio" value="1" name="p2" onclick="respuesta(2, this)"> Información geográfica de la víctima
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p2" onclick="respuesta(2, this)"> Números de tarjetas de crédito y contraseñas
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p2" onclick="respuesta(2, this)"> Historial de navegación en línea
+                </label>
+            </section>
+            
+            <!-- Sección 4 -->
+            <section data-section="p3" class="hidden" id="p3">
+                <h3>4. ¿Cómo se llama el tipo de ataque de phishing que utiliza mensajes de voz en lugar de correos electrónicos?</h3>
+                <label>
+                    <input type="radio" value="1" name="p3" onclick="respuesta(3, this)"> Vishing
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p3" onclick="respuesta(3, this)"> Smishing
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p3" onclick="respuesta(3, this)"> Phexting
+                </label>
+            </section> 
+            
+            <!-- Sección 5 -->
+            <section data-section="p4" class="hidden" id="p4">
+                <h3>5. ¿Cuál de las siguientes prácticas NO es una medida efectiva contra el phishing?</h3>
+                <label>
+                    <input type="radio" value="1" name="p4" onclick="respuesta(4, this)"> Utilizar contraseñas complejas y únicas
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p4" onclick="respuesta(4, this)"> Compartir contraseñas con amigos de confianza
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p4" onclick="respuesta(4, this)"> Verificar la autenticidad de los correos electrónicos antes de hacer clic en enlaces
+                </label>
+            </section>
+            
+            <!-- Sección 6 -->
+            <section data-section="p5" class="hidden" id="p5">
+                <h3>6. ¿Qué es el pescador (phisher) en el contexto de la seguridad informática?</h3>
+                <label>
+                    <input type="radio" value="1" name="p5" onclick="respuesta(5, this)"> Un atacante que intenta conseguir credenciales con fuerza bruta
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p5" onclick="respuesta(5, this)"> Un atacante que intenta engañar a las personas para obtener información confidencial
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p5" onclick="respuesta(5, this)"> Un dispositivo para filtrar correos no deseados
+                </label>
+            </section>
+            
+            <!-- Sección 7 -->
+            <section data-section="p6" class="hidden" id="p6">
+                <h3>7. ¿Qué es el malware de tipo keylogger?</h3>
+                <label>
+                    <input type="radio" value="1" name="p6" onclick="respuesta(6, this)"> Un programa que registra las teclas presionadas por un usuario, incluyendo contraseñas
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p6" onclick="respuesta(6, this)"> Un antivirus avanzado
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p6" onclick="respuesta(6, this)"> Un software para acelerar el rendimiento de la computadora
+                </label>
+            </section>
+            
+            <!-- Sección 8 -->
+            <section data-section="p7" class="hidden" id="p7">
+                <h3>8. ¿Cuál es una medida recomendada para protegerse contra el phishing?</h3>
+                <label>
+                    <input type="radio" value="1" name="p7" onclick="respuesta(7, this)"> Compartir información personal en todos los sitios web
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p7" onclick="respuesta(7, this)"> Utilizar contraseñas débiles para recordarlas fácilmente
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p7" onclick="respuesta(7, this)"> Verificar la autenticidad de los correos electrónicos y enlaces antes de hacer clic
+                </label>
+            </section>
+            
+            <!-- Sección 9 -->
+            <section data-section="p8" class="hidden" id="p8">
+                <h3>9. ¿Qué es el ransomware?</h3>
+                <label>
+                    <input type="radio" value="1" name="p8" onclick="respuesta(8, this)"> Un software antivirus
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p8" onclick="respuesta(8, this)"> Un tipo de malware que cifra archivos y exige un rescate para desbloquearlos
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p8" onclick="respuesta(8, this)"> Un programa para hacer copias de seguridad
+                </label>
+            </section>
+            
+            <!-- Sección 10 -->
+            <section data-section="p9" class="hidden" id="p9">
+                <h3>10. ¿Qué significa la sigla "HTTPS" en una URL?</h3>
+                <label>
+                    <input type="radio" value="1" name="p9" onclick="respuesta(9, this)"> HyperText Transfer Protocol Secure
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p9" onclick="respuesta(9, this)"> HyperText Transfer Protocol Standard
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p9" onclick="respuesta(9, this)"> HyperText and Text Processing System
+                </label>
+            </section>
+            
+            <!-- Botón de verificación y resultado -->
+            <button id="verificarBtn" onclick="mostrarResultado();"></button>
+            <!-- <h2> <span id="resultado"></span></h2> -->
+        </div>
+    
+    </header>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h3 class="footer__title"><img src="../../images/text.png" alt=""></h3>
+        
+                <ul class="nav__items">
+                    <li class="footer-li">
+                        <span class="footer__products">Empresa</span>
+                        <p class="footer__products-p"><a href="#" class="nav__links">Trabajá con nosotros</a></p>
+                        <p class="footer__products-p"><a href="#" class="nav__links">Invertí con nosotros</a></p>
+                        <p class="footer__products-p"><a href="#" class="nav__links">Centro de recursos</a></p>
+                    </li>
+                    <li class="footer-li">
+                        <span class="footer__products">Más</span>
+                        <p class="footer__products-p"><a href="#" class="nav__links">FAQ</a></p>
+                        <p class="footer__products-p"><a href="#" class="nav__links">Acerca de</a></p>
+                        <p class="footer__products-p"><a href="#" class="nav__links">Contactanos</a></p>
+                    </li>
+                    <li class="footer-li">
+                        <span class="footer__products">Productos</span>
+                        <p class="footer__products-p"><a href="#" class="nav__links">Celulares</a></p>
+                        <p class="footer__products-p"><a href="#" class="nav__links">Merchandising</a></p>
+
+                    </li>
+                    <li class="footer-li">
+                        <span class="footer__products">Recursos</span>
+                        <p class="footer__products-p"><a href="#" class="nav__links">Scripts</a></p>
+                        <p class="footer__products-p"><a href="#" class="nav__links">Test de ciberseguridad</a></p>
+                    </li>
+                </ul>
+            </nav>
+        
+            <img src="../../images/pago.png" alt="" class="pagos">
+        </section>
+        
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <!-- <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a> -->
+                <!-- <a href="#" class="footer__icons"><img src="./images/instagram.png" class="footer__img"></a> -->
+                <!-- <a href="#" class="footer__icons"><img src="./images/whatsapp.png" class="footer__img"></a> -->
+                <a class="footer__icons" href=""><i class="fab fa-instagram"></i></a>
+                <a class="footer__icons" href=""><i class="fab fa-facebook"></i></a>
+                <a class="footer__icons" href=""><i class="fab fa-github"></i></a>
+                <a class="footer__icons" href=""><i class="fab fa-telegram"></i></a>
+            </div>
+
+            <h3 class="footer__copyright"> &copy; 2024 Incognito SA</h3>
+        </section>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="resultados.js"></script>
+    <script src="../../js/slider.js"></script>
+    <script src="../../js/questions.js"></script>
+    <script src="../../js/menu.js"></script>
+
+</body>
+</html>
